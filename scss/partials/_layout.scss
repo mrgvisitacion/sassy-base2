@@ -43,3 +43,31 @@ body {
     }
 
 }
+
+/* GRID */
+
+$grid-column-gap: 1em;
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -$grid-column-gap;
+    align-content: center;
+    justify-content: center;
+}
+
+.row > .column {
+    flex-grow: 1;
+    flex-basis: 11em;
+    margin: 0 $grid-column-gap $grid-column-gap*3 $grid-column-gap;
+
+}
+
+/* DEMO */
+
+.demo .column {
+    padding: 1em;
+    background: grey;
+    text-align: center;
+
+}
