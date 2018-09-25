@@ -155,7 +155,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: -1em;
+  margin-left: -1%;
+  margin-right: -1%;
   -ms-flex-line-pack: center;
   align-content: center;
   -webkit-box-pack: center;
@@ -168,7 +169,7 @@ body {
   flex-grow: 1;
   -ms-flex-preferred-size: 11em;
   flex-basis: 11em;
-  margin: 0 1em 3em 1em; }
+  margin: 0 1% 2% 1%; }
 
 /* DEMO */
 .demo .column {
