@@ -176,3 +176,52 @@ body {
   padding: 1em;
   background: grey;
   text-align: center; }
+
+/* Site Structure */
+.site-header,
+.site-footer {
+  background: pink; }
+
+header {
+  background: pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+a {
+  color: purple;
+  text-decoration: none; }
+
+.site-identity h1 {
+  font-size: 1.5em;
+  margin: 0; }
+  .site-identity h1 a {
+    padding: 1em;
+    display: block; }
+
+.site-navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.site-navigation a {
+  display: block;
+  padding: 1em; }
+
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.site-footer ul {
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
