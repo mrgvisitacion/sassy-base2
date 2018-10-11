@@ -34,6 +34,12 @@ a.button {
 
 }
 
+a {
+    &:hover {
+        opacity: .2;
+    }
+}
+
 
   
 //   button.alt, a.button.alt {
