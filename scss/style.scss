@@ -15,6 +15,7 @@ $hero-bg-color: pink;
 $breakpoint-small: 768px;
 $breakpoint-medium: 992px;
 $breakpoint-large: 1250px;
+
   
 
 @import "partials/toc";
@@ -22,3 +23,4 @@ $breakpoint-large: 1250px;
 @import "partials/components";  
 @import "partials/layout";  
 @import "partials/structure";
+@import "partials/media"; 

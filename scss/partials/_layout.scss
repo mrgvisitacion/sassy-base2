@@ -55,14 +55,75 @@ $grid-column-gap: 1%;
     margin-right: -$grid-column-gap;
     align-content: center;
     justify-content: center;
+    &.swapped {
+        flex-direction: row-reverse;
+    }
 }
 
 .row > .column {
     flex-grow: 1;
-    flex-basis: 11em;
-    margin: 0 $grid-column-gap $grid-column-gap*2 $grid-column-gap;
+    //flex-basis: 11em;
+    //margin: 0 $grid-column-gap $grid-column-gap*2 $grid-column-gap;
+    margin: 0 1% 2% 1%;
+    @media (max-width: $breakpoint-small - 1) {
+        flex-grow: 0;
+        flex-basis: $breakpoint-small;
+    } 
+    &.one-half {
+        width: 48%;
+        //width: 50 - $grid-column-gap;
+    }
 
+    &.one-third {
+        width: 31.3333%;
+        //width: 33.3333 - $grid-column-gap
+    }
+
+    &.one-fourth {
+        width: 23%;
+        //width: 25 - $grid-column-gap
+    }
+
+    @media (min-width:
+    $breakpoint-small) {
+        &.centered {
+            flex-grow: 0;
+        
+                // Increase margins to force stack
+                margin-left: 4%;
+                margin-right: 4%; 
+        }
+    }
+
+    @media (min-width: $breakpoint-small) {
+        &.centered {
+            border: 1px solid red;
+        }
+    }
 }
+
+// .row.centered > .column {
+//         @media (min-width: $breakpoint-small){
+//             border: 1px solid red;
+//             margin-left: 4%;
+//             margin-right: 4%;
+//             flex-grow: 0;
+//         }
+// }
+
+.row.centered  {
+    @media (min-width: $breakpoint-small){
+        display: block;
+        > .column {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+
+
+
 
 /* DEMO */
 
